@@ -3,9 +3,9 @@ Maintainer: Steven! Ragnarök <steven@osrfoundation.org>
 Section: misc
 Priority: optional
 Standards-Version: 3.9.2
-Build-Depends: cmake, debhelper (>= 9), libasio-dev, libeigen3-dev
+Build-Depends: cmake, debhelper (>= 9), libasio-dev, libeigen3-dev, libtinyxml2-dev
 
-Package: fastrtps
+Package: libfastrtps-dev
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: An implementation of the OMG Real Time Publish Subscribe protocol.

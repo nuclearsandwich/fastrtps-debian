@@ -1,3 +1,7 @@
+fastrtps (1.4.0-32-g62d5d56-1) UNRELEASED; urgency=medium
+
+  * Make examples installation optional.
+
 fastrtps (1.4.0-31-g2c86bb2-1) UNRELEASED; urgency=medium
 
 

@@ -381,10 +381,13 @@ install(FILES ${PROJECT_SOURCE_DIR}/LICENSE
 set(CPACK_COMPONENT_LICENSES_HIDDEN 1)
 
 # Install examples
-install(DIRECTORY ${PROJECT_SOURCE_DIR}/examples/C++
-    DESTINATION examples/
-    COMPONENT examples
-    )
+option(INSTALL_EXAMPLES "Install examples" OFF)
+if (INSTALL_EXAMPLES)
+    install(DIRECTORY ${PROJECT_SOURCE_DIR}/examples/C++
+        DESTINATION examples/
+        COMPONENT examples
+        )
+endif()
 
 set(CPACK_COMPONENT_EXAMPLES_DISPLAY_NAME "Examples")
 set(CPACK_COMPONENT_EXAMPLES_DESCRIPTION "eProsima ${PROJECT_NAME_LARGE} examples")
